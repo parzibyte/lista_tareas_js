@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				}
 				tareas.splice(indice, 1);
 				// Guardar los cambios
-				guardarTareasEnAlmacenamiento(tareas);
+				guardarTareasEnAlmacenamiento();
 				refrescarListaDeTareas();
 			};
 			// El input para marcar la tarea como terminada
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				} else {
 					tareas[indice].terminada = false;
 				}
-				guardarTareasEnAlmacenamiento(tareas);
+				guardarTareasEnAlmacenamiento();
 				refrescarListaDeTareas();
 			}
 
